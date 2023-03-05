@@ -1,0 +1,132 @@
+html,
+body {
+  padding: 0;
+  margin: 0;
+}
+
+@font-face {
+  font-family: Inconsolata;
+  src: url("./fonts/Inconsolata/Inconsolata-Regular.ttf");
+}
+
+@font-face {
+  font-family: IBM-Plex-Sans;
+  src: url("./fonts/IBM_Plex_Sans_Condensed/IBMPlexSansCondensed-Light.ttf");
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: "Inconsolata";
+}
+
+p {
+  font-family: "IBM-Plex-Sans";
+  margin: 1rem;
+}
+a {
+  font-family: "IBM-Plex-Sans";
+}
+
+.wrapper {
+  display: grid;
+  grid-template-areas:
+    "header"
+    "nav"
+    "content"
+    "footer";
+}
+
+#home-header {
+  display: none;
+}
+
+@media (min-width: 900px) {
+  .wrapper {
+    margin: 3rem;
+    grid-template-columns: 1fr 4fr 1fr;
+    grid-template-areas:
+      ".      header        ."
+      "nav    content       ."
+      ".      footer        .";
+  }
+  .gallery {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+
+  main {
+    margin: auto;
+  }
+  nav {
+    position: fixed;
+  }
+  nav ul {
+    flex-direction: column;
+    text-align: left;
+  }
+}
+ul {
+  font-family: "IBM-Plex-Sans";
+}
+.normal-list li {
+  margin: 1rem;
+}
+
+header {
+  grid-area: header;
+  text-align: center;
+}
+
+nav {
+  grid-area: nav;
+  align-items: center;
+  text-align: center;
+}
+nav ul {
+  list-style-type: none;
+  padding: 0px;
+}
+a {
+  text-decoration: none;
+  color: rgb(87, 87, 87);
+}
+a:hover {
+  color: rgb(134, 100, 170);
+}
+nav li {
+  padding: 0.25rem;
+}
+main {
+  grid-area: content;
+}
+form {
+  text-align: center;
+}
+input {
+  padding: 0.5rem;
+  margin: 0.25rem;
+}
+footer {
+  position: fixed;
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.75);
+  width: 100%;
+  bottom: 0px;
+  text-align: center;
+}
+
+.gallery img {
+  margin: 5px;
+}
+
+.col {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  flex-shrink: 1;
+  margin-bottom: 3.5rem;
+}

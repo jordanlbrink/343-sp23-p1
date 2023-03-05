@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Name Lastname Portfolio</title>
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+
+<body>
+  <div class="wrapper">
+    <nav>
+      <h2>Name Lastname</h2>
+      <ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="/about">About</a></li>
+        <li><a href="/contact">Contact</a></li>
+        <li><a href="/shows">Shows</a></li>
+      </ul>
+    </nav>
+
+    <header id="home-header"><h1>Home</h1></header>
+
+    <main>
+
+        <div class="col">
+          <img src="https://picsum.photos/400/300?random=7" alt="Random image from picsum.photos"/>
+          <img src="https://picsum.photos/400/300?random=8" alt="Random image from picsum.photos"/>
+          <img src="https://picsum.photos/400/300?random=9" alt="Random image from picsum.photos"/>
+          <img src="https://picsum.photos/400/300?random=10" alt="Random image from picsum.photos"/>
+          <img src="https://picsum.photos/400/300?random=11" alt="Random image from picsum.photos"/>
+          <img src="https://picsum.photos/400/300?random=12" alt="Random image from picsum.photos"/>
+        </div>
+    </main>
+
+    <footer><p>Copyright © 2023 Name Lastname</p></footer>
+
+  </div>
+    </div>
+  </body>
+</html>
